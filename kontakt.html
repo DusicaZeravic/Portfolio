@@ -8,13 +8,14 @@
     <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.png'/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Posalji poruku</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
+    <div class="container-form">
+        <div class="header-form">
                 <nav class="navbar">
                         <ul>
                             <li><a href="index.html">Početna</a></li>
@@ -38,6 +39,66 @@
                         </div>
                  </nav>
         </div>
+
+
+    <div class="content-form"> 
+        <div class="picture-form">
+            <img src="img/contact-us.jpg">
+        </div>
+
+        <div class="form-part">
+                <form action='' method='get' class='form'>
+                    <label for="fname"> Ime:*</label>
+                    <input type="text" id="fname" name="firstname">
+                    
+                    <br>
+
+                    <label for="lname"> Prezime:* </label>
+                    <input type="text" id="lname" name="lastname">
+
+                    <br>
+
+                    <label for="email"> Email:* </label>
+                    <input type="email" id="email" name="email">
+
+                    <br>
+
+                    <label for="service"> Označite vrstu usluge koja Vam je potrebna </label>
+                    <select id="service" name="service">
+                        <option value="psihoterapija">Psihoterapija</option>
+                        <option value="savetovanje">Savetovanje</option>
+                        <option value="sihološka procena">Psihološka procena</option>
+                        <option value="profesionalna orijentacije">Profesionalna orijentacija</option>
+                    </select>
+
+                    <br>
+
+                    <label for="subject">Tekst poruke</label>
+                    <textarea id="subject" name="subject" placeholder="Ovde upišite tekst poruke..." style="height:170px"></textarea>
+
+                    <input type="reset" value="Obriši">
+                    <input type="submit" value="Pošalji poruku">
+
+                </form>
+        </div>
     </div>
+
+    <footer class="footer-form">
+        <div class="copyright">
+                <p>
+                 &copy; 2019 Dušica Žeravić. Sva prava zadržana.
+                </p>
+        </div>
+        <div>
+            <nav>
+                <ul class="social-links">
+                    <li><a href="https://github.com/DusicaZeravic" target="_blank"><i class="fab fa-github"></i>
+                        <li><a href="https://www.linkedin.com/in/du%C5%A1ica-%C5%BEeravi%C4%87-916205141/" target="_blank"><i class="fab fa-linkedin"></i></i></a></li>
+                        <li><a href="https://www.facebook.com/dusica.zeravic" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+            </nav>
+        </div> 
+</footer>
+</div>
 </body>
 </html>
