@@ -1,103 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.png'/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.png' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
 
     <title>Savetovaliste Zeravic | Posalji poruku</title>
 </head>
+
 <body>
     <div class="container-form">
         <div class="header-form">
-                <nav class="navbar">
-                        <ul>
-                            <li><a href="index.html">Početna</a></li>
-                            <li><a href="o_meni.html">O meni</a></li>
-                            <li><a href="usluge.html">Usluge</a></li>
-                            <li><a href="#" class="active-nav-link">Pošalji poruku</a></li>
-                        </ul>
-                        <div class="contact-bar">
-                            <span>
-                                <a href="mailto:dukizeravic@gmail.com">
-                                    <i class="far fa-envelope"></i>
-                                    dukizeravic@gmail.com
-                                </a>
-                            </span>
-                            <span>
-                                <i class="fas fa-phone"></i>
-                                </i>
-                                064 916 33 03
-                            </span>
-                        </div>
-                 </nav>
-        </div>
-
-
-    <div class="content-form"> 
-        <div class="picture-form">
-            <img src="img/contact-us.jpg">
-        </div>
-
-        <div class="form-part">
-                <form>
-                    <label for="fname"> Ime:*</label>
-                    <input type="text" id="fname"  name="firstname">
-                    
-                    <br>
-                
-                    <label for="lname"> Prezime:* </label>
-                    <input type="text" id="lname"  name="lastname">
-
-                    <br>
-
-                    <label for="email"> Email:* </label>
-                    <input type="email" id="email" name="email">
-
-                    <br>
-
-                    <label for="service"> Označite vrstu usluge koja Vam je potrebna </label>
-                    <select id="service" name="service">
-                        <option value="psihoterapija">Psihoterapija</option>
-                        <option value="savetovanje">Savetovanje</option>
-                        <option value="sihološka procena">Psihološka procena</option>
-                        <option value="profesionalna orijentacije">Profesionalna orijentacija</option>
-                    </select>
-
-                    <br>
-
-                    <label for="subject">Tekst poruke</label>
-                    <textarea id="subject" name="subject" placeholder="Ovde upišite tekst poruke..." style="height:170px"></textarea>
-
-                    <input id="button" type="reset" value="Obriši">
-                    <input type="submit" value="Pošalji poruku">
-                </form>
-        </div>
-    </div>
-
-    <footer class="footer-form">
-        <div class="copyright">
-                <p>
-                 &copy; 2019 Dušica Žeravić. Sva prava zadržana.
-                </p>
-        </div>
-        <div>
-            <nav>
-                <ul class="social-links-form">
-                    <li><a href="https://github.com/DusicaZeravic" target="_blank"><i class="fab fa-github"></i>
-                        <li><a href="https://www.linkedin.com/in/du%C5%A1ica-%C5%BEeravi%C4%87-916205141/" target="_blank"><i class="fab fa-linkedin"></i></i></a></li>
-                        <li><a href="https://www.facebook.com/dusica.zeravic" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="o_meni.html">O meni</a></li>
+                    <li><a href="usluge.html">Usluge</a></li>
+                    <li><a href="#" class="active-nav-link">Pošalji poruku</a></li>
                 </ul>
+                <div class="contact-bar">
+                    <span>
+                        <a href="mailto:dukizeravic@gmail.com">
+                            <i class="far fa-envelope"></i>
+                            dukizeravic@gmail.com
+                        </a>
+                    </span>
+                    <span>
+                        <i class="fas fa-phone"></i>
+                        </i>
+                        064 916 33 03
+                    </span>
+                </div>
             </nav>
-        </div> 
-</footer>
-</div>
-<script type="text/javascript" src="script.js"></script>
+        </div>
+        <div class="content-form">
+            <div class="picture-form">
+                <img src="img/contact-us.jpg">
+            </div>
+
+            <div class="form-part">
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="fname"> Ime:* </label>
+                            <input type="text" class="form-control" id="reg_fname" name="reg_fname" required>
+                        </div>
+                        <div class="col">
+                            <label for="lname"> Prezime:* </label>
+                            <input type="text" class="form-control mb-2" id="reg_lname" name="reg_lname" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"> Email adresa:* </label>
+                        <input type="email" class="form-control" id="reg_email" name="reg_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service"> Označite vrstu usluge koja Vam je potrebna: </label>
+                        <select id="service" name="service" class="form-control">
+                            <option selected value="psihoterapija">Psihoterapija</option>
+                            <option value="savetovanje">Savetovanje</option>
+                            <option value="sihološka procena">Psihološka procena</option>
+                            <option value="profesionalna orijentacije">Profesionalna orijentacija</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Tekst poruke</label>
+                        <textarea id="subject" class="form-control" name="subject"
+                            placeholder="Ovde upišite tekst poruke..." style="height:160px"></textarea>
+                    </div>
+
+                    <div id="errorMessage" class="error-message" style="color: red">
+                    </div>
+
+                    <input id="button" class="btn btn-secondary mr-2 mt-4" type="reset" value="Obriši">
+                    <input type="submit" id="submit" class="btn btn-dark mt-4" value="Pošalji poruku">
+                </form>
+            </div>
+        </div>
+        <footer class="footer-form">
+            <div class="copyright">
+                <p>
+                    &copy; 2019 Dušica Žeravić. Sva prava zadržana.
+                </p>
+            </div>
+            <div>
+                <nav>
+                    <ul class="social-links-form">
+                        <li><a href="https://github.com/DusicaZeravic" target="_blank"><i class="fab fa-github"></i>
+                        <li><a href="https://www.linkedin.com/in/du%C5%A1ica-%C5%BEeravi%C4%87-916205141/"
+                                target="_blank"><i class="fab fa-linkedin"></i></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="JS/main.js"></script>
 </body>
+
 </html>

@@ -93,7 +93,7 @@ html {
     border-radius: 50%;
 }
 
-.glavni-naslov {
+.main-head {
     margin-top: 2%;
     text-align: center;
     font-size: 300%;
@@ -262,6 +262,7 @@ html {
 .text {
     margin: 10% 3% 0 3%;
 }
+
 .border {
     border-style: ridge;
     margin: 2% 0;
@@ -340,14 +341,6 @@ footer ul {
         "f f f f f f f f f f f f";
 }
 
-.container-form .navbar {
-    padding-top: 1.5%;
-}
-
-.container-form .contact-bar {
-    margin-top: 2%;
-}
-
 .header-form {
     grid-area: h;
 }
@@ -360,8 +353,8 @@ footer ul {
 
 .picture-form {
     position: relative;
-    right: -5%;
-    top: 18%;
+    right: -8%;
+    top: 23%;
     float: left;
     width: 50%;
 }
@@ -371,58 +364,24 @@ footer ul {
 }
 
 .form-part {
-    width: 50%;
+    width: 40%;
+    height: 100vh;
     float: right;
     position: relative;
-    top: 6%;
-    right: 1%;
-}
-
-.form {
-    width: 90%;
+    top: 5%;
+    right: 7%;
 }
 
 .footer-form {
     grid-area: f;
 }
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid lightgray;
-  }
-
-input[type=email] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid lightgray;
+  
+input[type=reset] {
+    padding: 12px 20px;
 }
 
-  
 input[type=submit] {
-    background-color: rgb(119, 163, 119);
-    color: aliceblue;
-    padding: 12px 25px;
-    border: 1px solid rgb(163, 162, 162);
-    cursor: pointer;
-    margin-top: 2%;
-  }
-
-  input[type=submit]:hover {
-    background-color: #3c7a3f;
-  }
-
-  input[type=reset] {
-      background-color: rgb(177, 100, 100);
-      color: aliceblue;
-      padding: 12px 25px;
-      cursor: pointer;
-      border: 1px solid rgb(163, 162, 162);
-      margin-right: 1%;
-  }
-
-  input[type=reset]:hover {
-    background-color: #9c4a4a;
+    padding: 12px 20px;
   }
 
   /* --------FOOTER------- */
@@ -442,13 +401,13 @@ footer {
 .social-links,
 .social-links-services,
 .social-links-form {
-    margin-left: 36%;
+    margin-left: 38%;
     width: 30%;
 }
 
 .social-links li {
     display: inline-block;
-    padding-left: 20%;
+    padding-left: 25%;
     margin-top: -3%;
 }
 
@@ -461,7 +420,7 @@ footer {
 .social-links-form li {
     display: inline-block;
     padding-left: 20%;
-    margin-top: 3%;
+    margin-top: -3%;
 }
 
 .social-links a,
@@ -470,8 +429,8 @@ footer {
     text-decoration: none;
     font-size: 150%;
     color: rgb(53, 62, 175);
-
 }
+
 
 /* MEDIA QUERIES*/
 @media(max-width: 768px){
@@ -588,7 +547,16 @@ footer {
         }
 
     .form-part {
-        top: 4%;
+        margin-top: 4%;
+    }
+
+    .picture-form img {
+        margin-top: 60%;
+    }
+
+    .form-part .btn {
+        resize: both;
+        padding: 3%;
     }
 
 }
